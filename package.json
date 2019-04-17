@@ -1,0 +1,36 @@
+{
+  "name": "make-believe-typescript",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "docs-serve": "npm compodoc src -c compodoc.json",
+    "test": "ava",
+    "ci:sendCoverage": "nyc report --reporter=text-lcov"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@ava/babel-preset-stage-4": "^2.0.0",
+    "@types/node": "^11.13.4",
+    "ava": "^1.4.1",
+    "ava-ts": "^0.25.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "coveralls": "^3.0.3",
+    "nyc": "^14.0.0",
+    "source-map-loader": "^0.2.4",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.3.3333"
+  },
+  "ava": {
+    "compileEnhancements": false,
+    "files": [
+      "test/**/*.{js,jsx}"
+    ],
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
+}

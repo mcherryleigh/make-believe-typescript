@@ -1,0 +1,20 @@
+# Node/NPM
+node_modules
+
+# Project
+.nyc_output
+documentation
+docs
+website
+lib
+
+# Optional Tools
+.quokka
+wallaby.js
+
+# Jetbrains IDE
+.idea
+*.iml
+
+# IDE Plugins
+wallaby.js

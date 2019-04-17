@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "removeComments": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "declaration": true,
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "types": [
+      "node"
+    ],
+    "typeRoots": ["node","./src/types"]
+  },
+  "include": [
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    //    "./test/*"
+  ]
+}
