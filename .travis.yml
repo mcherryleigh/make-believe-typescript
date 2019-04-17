@@ -15,4 +15,6 @@ jobs:
     - stage: test
       script:
         - npm run build
+        - ls -alh
+        - ls -alh test
         - npm run test
